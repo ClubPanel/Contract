@@ -14,7 +14,7 @@ const output: Module = {
     register: registerClient,
     configs: ["contract.json", "contract-text.txt"]
   },
-  priority: 1256
+  priority: 1178
 };
 
 export default output;

@@ -18,6 +18,7 @@ const ContractPage = ({config}) : JSX.Element => {
     >
       <chakra.h2
         fontSize={{base: "2em"}}
+        mt="10px"
       >
         {configs.contractSignHeader}
       </chakra.h2>
@@ -30,14 +31,20 @@ const ContractPage = ({config}) : JSX.Element => {
       <ContractTextComponent
         text={text}
       />
-      <Button
-        mb={{base: "40px", md: "20px"}}
-        colorScheme="blue"
-        size="md"
-        py="5px"
+      <chakra.form
+        method="POST"
+        action={configs.signConfirmURL}
       >
-        Text
-      </Button>
+        <Button
+          mb={{base: "40px", md: "20px"}}
+          colorScheme="blue"
+          size="md"
+          py="5px"
+          type="submit"
+        >
+          {configs.contractSignButtonText}
+        </Button>
+      </chakra.form>
     </Box>
   );
 };
