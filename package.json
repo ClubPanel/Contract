@@ -1,0 +1,21 @@
+{
+  "name": "contract",
+  "version": "1.0.0",
+  "description": "An authentication module for ClubPanel to require users to agree to something before they can use the website.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClubPanel/Contract.git"
+  },
+  "author": "Jonah Uellenberg",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ClubPanel/Contract/issues"
+  },
+  "homepage": "https://github.com/ClubPanel/Contract#readme",
+  "private": false,
+  "dependencies": {
+    "react-markdown": "^6.0.2"
+  },
+  "devDependencies": {}
+}
