@@ -3,7 +3,7 @@ import {ContractConfig} from "../config/ContractConfig";
 import {ClientRegisterCallback} from "../../../shared/module/module";
 
 export const registerClient = (RegisterClientPage: ClientRegisterCallback) => {
-  const config = GetConfig<ContractConfig>("contract.json");
+  const config = GetConfig<ContractConfig>("client/contract.json");
 
   RegisterClientPage(config.signURL, {
     name: config.pageName

@@ -12,7 +12,7 @@ const output: Module = {
   },
   client: {
     register: registerClient,
-    configs: ["contract.json", "contract-text.txt"]
+    configs: ["client/contract.json", "client/contract-text.txt"]
   },
   priority: 1178
 };

@@ -3,7 +3,6 @@ import {GetConfig} from "../../../shared/config/configStore";
 import {ContractConfig} from "../config/ContractConfig";
 import {Express, Request, Response} from "express";
 import {registerAuthReq} from "../../../server/util/auth";
-import mongoose from "mongoose";
 
 declare module "express-session" {
   export interface SessionData {
@@ -13,7 +12,7 @@ declare module "express-session" {
 }
 
 export const registerServer = (app: Express) => {
-  const configs = GetConfig<ContractConfig>("contract.json");
+  const configs = GetConfig<ContractConfig>("client/contract.json");
 
   registerAuthReq((req: Request, res: Response) => {
     if(!req.session?.user?.modules?.contract?.agreed) {

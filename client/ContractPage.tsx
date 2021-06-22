@@ -1,12 +1,12 @@
-import {Box, Button, chakra, Grid, GridItem, Text, VStack} from "@chakra-ui/react";
+import {Box, Button, chakra, Text} from "@chakra-ui/react";
 import React from "react";
 import {GetConfig} from "../../../shared/config/configStore";
 import {ContractConfig} from "../config/ContractConfig";
 import ContractTextComponent from "./components/ContractTextComponent";
 
 const ContractPage = ({config}) : JSX.Element => {
-  const configs = GetConfig<ContractConfig>("contract.json", config);
-  const text = GetConfig<string>("contract-text.txt", config);
+  const configs = GetConfig<ContractConfig>("client/contract.json", config);
+  const text = GetConfig<string>("client/contract-text.txt", config);
 
   return (
     <Box
