@@ -2,7 +2,6 @@
   "name": "contract",
   "version": "1.0.0",
   "description": "An authentication module for ClubPanel to require users to agree to something before they can use the website.",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ClubPanel/Contract.git"
