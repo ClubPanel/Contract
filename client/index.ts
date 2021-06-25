@@ -1,4 +1,4 @@
-import {ClientSide} from "../../../shared/module/module";
+import {ClientSide} from "../../../shared/module/moduleClient";
 import {registerClient} from "./client";
 
 const output: ClientSide = {

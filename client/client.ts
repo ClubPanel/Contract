@@ -1,6 +1,6 @@
 import {GetConfig} from "../../../shared/config/configStore";
 import {ContractConfig} from "../config/ContractConfig";
-import {ClientRegisterCallback} from "../../../shared/module/module";
+import {ClientRegisterCallback} from "../../../shared/module/moduleClient";
 
 export const registerClient = (RegisterClientPage: ClientRegisterCallback) => {
   const config = GetConfig<ContractConfig>("client/contract.json");
