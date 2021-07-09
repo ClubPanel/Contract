@@ -1,11 +1,12 @@
 import {RegisterConfig} from "../../../shared/config/configFilesManager";
+import {ContractConfig} from "./ContractConfig";
 
 export const registerConfigs = () => {
   RegisterConfig({name: "client/contract.json", default: config});
   RegisterConfig({name: "client/contract-text.txt", default: "# Markdown Supported\ncontract\ntext\nhere"});
 };
 
-const config = {
+const config: ContractConfig = {
   __comment__signLocation: "The below field is the location that will redirect users to the signing page.",
   signURL: "/contract",
   signConfirmURL: "/confirmcontract",
