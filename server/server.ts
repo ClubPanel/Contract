@@ -40,6 +40,7 @@ export const registerServer = (app: Express) => {
       }
     });
 
+    if([configs.signURL, configs.signConfirmURL].includes(req.session.lastURL)) req.session.lastURL = null;
     res.redirect(req.session.lastURL || "/");
     req.session.lastURL = null;
   });
