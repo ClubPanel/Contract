@@ -14,7 +14,7 @@
   "homepage": "https://github.com/ClubPanel/Contract#readme",
   "private": false,
   "dependencies": {
-    "react-markdown": "^6.0.2"
+    "react-markdown": "^8.0.0"
   },
   "devDependencies": {}
 }
